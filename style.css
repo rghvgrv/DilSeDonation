@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Sintony&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Sintony', sans-serif;
+}
+
+.header {
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);    
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.headerimage{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
+}
+
+.header h2 {
+    font-size: 30px;
+    margin-left: 25px;
+}
+
+.head2 {
+    width: 100%;
+}
+
+/* .headertxt ,.immage1{
+    flex:0.4;
+} */
+
+marquee {
+    padding: 1%;
+    background-color: #FBDA61;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #ff5a0e 100%);      
+    font-size: 30px;
+    font-weight: 800;
+    color: black;
+    font-family: sans-serif;
+    margin-bottom: -10px;
+}
+
+.text {
+    padding: 2%;
+    font-size: 13px;
+    overflow: hidden;
+    height:auto;
+    overflow-wrap: break-word;
+    margin: 0;
+    background-image: url("./image/c2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: auto;
+    text-align: center;
+    padding-top: 20vh;
+    animation: slider 9s infinite  linear ;
+
+}
+
+@keyframes slider{
+    0%{background-image: url("./image/c2.jpg"); }
+    33%{background-image:url("./image/img.jpg");}
+    66%{background-image: url("./image/c1.jpg");}
+}
+
+.text h1,h3{
+    display: block;
+}
+
+form{
+
+}
+
+
+
+footer {
+    margin-top: -10px;
+    font-size: 15px;
+    font-weight: bold;
+    width: auto;
+    padding: 1%;
+    text-align: center;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+}
+
+
+@media screen and (max-width:480px){
+    .header{
+        display: block;
+        align-items: center;
+    }
+
+
+    .text h1,h3{
+        font-size: 10px;
+        display: block;
+    }
+    marquee{
+        padding: 2%;
+        font-size: 10px;
+    }
+
+    .text{
+        display: block;
+        background-size: 100% 100%;
+        overflow:auto;
+        word-wrap:break-word;
+    }
+    footer{
+        font-size: 10px;
+    }
+}
+
